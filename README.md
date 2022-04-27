@@ -1,7 +1,7 @@
 # Shields.IO JSON Endpoint.
 > This is a template for building Flask APIs deployed to Heroku.
 
-![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Flyle-io-server-dev.herokuapp.com%2Fapi%2Fv1%2Fdata%2F1)
+![Custom badge](https://img.shields.io/endpoint?url=https://lyle-io-server-dev.herokuapp.com/api/v1/data/1)
 [![Website https://flask-react-blog-dev.herokuapp.com/](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://flask-react-blog-dev.herokuapp.com/)
 [![security: bandit][bandit-image]][bandit-url]
 [![Imports: isort][isort-image]][isort-url]
