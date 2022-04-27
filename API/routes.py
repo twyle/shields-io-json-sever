@@ -22,12 +22,22 @@ def api_home() -> str:
 
 @app.route('/api/v1/data/<id>', methods=['GET'])
 def shields_io_data(id):
-    colors = ['red', 'green', 'yellow', 'blue', 'orange', 'purple']
+    colors = ['red', 'green', 'yellow', 'blue', 'orange', 'purple', 'grey']
+    styles = ['flat', 'plastic', 'flat-square', 'for-the-badge', 'social']
     data = {
         "schemaVersion": 1,
         "label": "name",
         "message": "lyle okoth",
-        "color": random.choice(colors)
+        "color": random.choice(colors),
+        "labelColor": random.choice(colors),
+        "isError": random.choice["true", "false"],
+        "namedLogo": "none",
+        "logoSvg": "none",
+        "logoColor": "none",
+        "logoWidth": "none",
+        "logoPosition": "none",
+        "style": random.choice(styles),
+        "cacheSeconds": "300"
         }
 
     return data, 200
