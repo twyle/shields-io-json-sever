@@ -30,12 +30,7 @@ def shields_io_data(id):
         "message": "lyle okoth",
         "color": random.choice(colors),
         "labelColor": random.choice(colors),
-        "isError": random.choice(["true", "false"]),
-        "namedLogo": "none",
-        "logoSvg": "none",
-        "logoColor": "none",
-        "style": random.choice(styles),
-        "cacheSeconds": "300"
+        "style": random.choice(styles)
         }
 
     return data, 200
