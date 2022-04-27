@@ -3,6 +3,7 @@ Empty module docstring
 """
 from crypt import methods
 from API import app
+import random
 
 
 @app.route('/api/v1', methods=['GET'])
@@ -21,11 +22,12 @@ def api_home() -> str:
 
 @app.route('/api/v1/data/<id>', methods=['GET'])
 def shields_io_data(id):
+    colors = ['red', 'green', 'yellow', 'blue', 'orange', 'purple']
     data = {
         "schemaVersion": 1,
         "label": "name",
         "message": "lyle okoth",
-        "color": "green"
+        "color": random.choice(colors)
         }
 
     return data, 200
