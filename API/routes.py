@@ -19,8 +19,8 @@ def api_home() -> str:
     return "Hello from flask e-commerce api!", 200
 
 
-@app.route('/api/v1/data', methods=['GET'])
-def shields_io_data():
+@app.route('/api/v1/data/<id>', methods=['GET'])
+def shields_io_data(id):
     data = {
         "schemaVersion": 1,
         "label": "name",
