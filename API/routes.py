@@ -23,9 +23,9 @@ def api_home() -> str:
 def shields_io_data():
     data = {
         "schemaVersion": 1,
-        "label": "hello",
-        "message": "sweet world",
-        "color": "orange"
+        "label": "name",
+        "message": "lyle okoth",
+        "color": "green"
         }
 
     return data, 200
