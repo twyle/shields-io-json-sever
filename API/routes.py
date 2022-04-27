@@ -1,6 +1,7 @@
 """
 Empty module docstring
 """
+from crypt import methods
 from API import app
 
 
@@ -16,3 +17,15 @@ def api_home() -> str:
     """
 
     return "Hello from flask e-commerce api!", 200
+
+
+@app.route('/api/v1/data', methods=['GET'])
+def shields_io_data():
+    data = {
+        "schemaVersion": 1,
+        "label": "hello",
+        "message": "sweet world",
+        "color": "orange"
+        }
+
+    return data, 200

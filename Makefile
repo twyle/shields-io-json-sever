@@ -6,3 +6,9 @@ install: update-pip requirements.txt
 
 install-dev: requirements-dev.txt
 	@pip install -r requirements-dev.txt
+
+run:
+	@python manage.py run
+
+test:
+	@python -m pytest
