@@ -34,8 +34,6 @@ def shields_io_data(id):
         "namedLogo": "none",
         "logoSvg": "none",
         "logoColor": "none",
-        "logoWidth": "none",
-        "logoPosition": "none",
         "style": random.choice(styles),
         "cacheSeconds": "300"
         }
